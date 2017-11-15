@@ -41,8 +41,8 @@ class App extends React.Component {
         <span>今の時間 {this.state.time.toLocaleTimeString()}</span>
         <h2>ToDo:</h2>
         <ul>
-        {this.state.todos.map((todo, i) => {
-          return <li key={i}>{todo}</li>
+        {this.state.todos.map((todo) => {
+          return <li key={todo}>{todo}</li>
         })}
         </ul>
       </div>
@@ -52,5 +52,5 @@ class App extends React.Component {
 }
 ReactDOM.render(
   <App />,
-  document.getElementById("app")  
+  document.getElementById("app")
 )

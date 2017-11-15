@@ -24,8 +24,8 @@ export default class App extends React.Component {
       <div>
         <h1>Reddit ニュー速R</h1>
         <ul>
-        {this.state.items.map((item, i) => {console.log(item);
-          return <li key={i}><a href={`https://www.reddit.com${item.permalink}`}>{item.title}</a></li>
+        {this.state.items.map((item) => {
+          return <li key={item.permalink}><a href={`https://www.reddit.com${item.permalink}`}>{item.title}</a></li>
         })}
         </ul>
       </div>
